@@ -1,11 +1,28 @@
-import React from 'react'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Navbar from "./components/Navbar"
+
+import Home from "./pages/Home"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
+import Dashboard from "./pages/Dashboard"
+import CreateMeeting from "./pages/CreateMeeting"
+import Meeting from "./pages/Meeting"
+
 function App() {
   return (
-    <div className="bg-blue-500 text-white p-10 text-center">
-      Tailwind CSS is working!
-    </div>
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/meeting/create" element={<CreateMeeting />} />
+        <Route path="/meeting/:code" element={<Meeting />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-export default App;
+export default App
