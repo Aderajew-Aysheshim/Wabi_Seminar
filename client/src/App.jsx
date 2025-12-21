@@ -7,13 +7,11 @@ import Register from "./pages/Register"
 import Dashboard from "./pages/Dashboard"
 import CreateMeeting from "./pages/CreateMeeting"
 import Meeting from "./pages/Meeting"
-
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-
-      <Routes>
+    <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -24,5 +22,4 @@ function App() {
     </BrowserRouter>
   )
 }
-
 export default App
