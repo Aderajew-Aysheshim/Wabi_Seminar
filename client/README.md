@@ -1,16 +1,50 @@
-# React + Vite
+# Wabi-Seminar | Google Meet Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Group 2 - WabiSkills 6th Ronda Seminar Project**  
+**Updated:** December 21, 2025
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## React Compiler
+This project is a **real-time video conferencing application** inspired by Google Meet. It allows users to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Register and log in securely (JWT-based authentication)  
+- Create meetings with unique shareable codes  
+- Join meetings using a code  
+- Communicate via real-time audio/video (WebRTC)  
+- Chat with persistent message history  
+- Control microphone/camera and leave meetings  
 
-## Expanding the ESLint configuration
+It is built as a **full-stack application** with React (frontend), Node.js/Express (backend), MySQL database, and Socket.io for real-time communication.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technology Stack
+
+### Frontend (Client)
+- **Framework:** React 19  
+- **Build Tool:** Vite  
+- **Styling:** Tailwind CSS  
+- **State Management:** Redux Toolkit + RTK Query  
+- **Routing:** React Router v7  
+- **Real-Time Media:** Simple-Peer (WebRTC wrapper)  
+- **Real-Time Communication:** Socket.io-client  
+- **Other Libraries:** axios, jwt-decode, date-fns, react-icons  
+
+### Backend (Server)
+- **Runtime:** Node.js  
+- **Framework:** Express.js  
+- **Real-Time:** Socket.io (signaling and chat)  
+- **Authentication:** bcryptjs + jsonwebtoken (JWT)  
+- **Database Driver:** mysql2  
+- **Other:** cors, helmet, morgan, nanoid  
+
+### Database
+- **MySQL** for relational data storage  
+- Ensures data integrity with foreign keys
+
+---
+
+## Folder Structure
+
